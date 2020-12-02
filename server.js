@@ -50,6 +50,24 @@ app.get('/', async (_, res) => {
 
 })
 
+app.get('/dark', async (_, res) => {
+
+    const str = await render(path + '/page/indexDark.ejs')
+
+    // console.log(imageDt[0])
+    res.send(str)
+
+})
+
+app.get('/rankDark', async (_, res) => {
+
+    const str = await render(path + '/page/rankDark.ejs', { titleDt, imageDt, categoryDt, dateDt })
+
+    // console.log(imageDt[0])
+    res.send(str)
+
+})
+
 app.get('/rank', async (_, res) => {
 
     const str = await render(path + '/page/rank.ejs', { titleDt, imageDt, categoryDt, dateDt })
