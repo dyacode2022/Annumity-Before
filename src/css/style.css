@@ -1,0 +1,140 @@
+body {
+    color: rgb(109, 109, 109);
+    background: rgb(255, 255, 255);
+
+    margin: 0;
+    padding: 0;
+}
+
+#navBar {
+    /* background: rgb(77, 77, 77); */
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+#navBarTitle {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    padding-left: 20px;
+    top: 10%;
+}
+
+#navBarRank {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    top: 20%;
+}
+
+
+.anime {
+    background: rgb(241, 241, 241);
+    border-radius: 30px;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+    /* justify-content: center; */
+    margin: 40px;
+}
+
+.anime_one {
+    background: rgb(223, 220, 79);
+    border-radius: 30px;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+    /* justify-content: center; */
+    margin: 40px;
+}
+
+.anime_two {
+    background: rgb(161, 161, 161);
+    border-radius: 30px;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+    /* justify-content: center; */
+    margin: 40px;
+}
+.anime_thr {
+    background: rgb(155, 131, 103);
+    border-radius: 30px;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+    /* justify-content: center; */
+    margin: 40px;
+}
+
+.animeNum {
+    color: rgb(34, 34, 34);
+    font-size: 30px;
+    margin-left: 20%;
+}
+
+.animeInfoNum {
+    color: rgb(34, 34, 34);
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+.animeImg {
+    border-radius: 10px;
+    width: auto; height: auto;
+    max-width: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 3%;
+    margin-right: 4%;
+    /* max-height: 100px; */
+}
+
+.animeInfoImg {
+    /* border-radius: 10px; */
+    /* width: auto; height: auto; */
+    /* max-width: 120px;  */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 6%;
+    font-size: 20px;
+    color: rgb(34, 34, 34);
+    /* max-height: 100px; */
+}
+
+.animeTitle {
+    color: rgb(34, 34, 34);
+    font-size: 20px;
+    width: 250px;
+    margin-right: 5%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.animeInfoTitle {
+    color: rgb(34, 34, 34);
+    font-size: 20px;
+    margin-right: 20%;
+}
+
+.animeCate {
+    color: rgb(34, 34, 34);
+    font-size: 20px;
+    margin-right: 5%;
+}
+
+.animeInfoCate {
+    color: rgb(34, 34, 34);
+    font-size: 20px;
+    margin-right: 10%;
+}
+
+.animeDate {
+    color: rgb(34, 34, 34);
+    font-size: 20px;
+}
