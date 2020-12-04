@@ -13,6 +13,8 @@
  - 애니 순위를 쉽게 확인할 수 있습니다 (RANK, 개발중)
  - 최신 애니를 분기별로 쉽게 확인할 수 있습니다(개발예정)
 
+*다크테마 개발중*
+
 **크롤링 출처**
  - 온나다(onnada) http://anime.onnada.com/
  - robots.txt : User-agent: *  Allow: /
