@@ -1,0 +1,228 @@
+body {
+    color: #ECEFF4;
+    background:#3B4252;
+
+    margin: 0;
+    padding: 0;
+}
+
+#navBar {
+    /* background: rgb(77, 77, 77); */
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    background: #5E81AC;
+}
+
+#navBarTitle {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    padding-left: 20px;
+    top: 10%;
+}
+
+#navBarRank {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    top: 20%;
+}
+
+.anime {
+    background: #4C566A;
+    color: #ECEFF4;
+    border-radius: 30px;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+    /* justify-content: center; */
+    margin: 40px;
+}
+
+.anime_one {
+    background: rgb(255, 253, 113);
+    border-radius: 30px;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+    /* justify-content: center; */
+    margin: 40px;
+    color: rgb(34, 34, 34);
+}
+
+.anime_two {
+    background: rgb(206, 206, 206);
+    border-radius: 30px;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+    /* justify-content: center; */
+    margin: 40px;
+    color: rgb(34, 34, 34);
+}
+.anime_thr {
+    background: rgb(170, 145, 116);
+    border-radius: 30px;
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+    /* justify-content: center; */
+    margin: 40px;
+    color: rgb(34, 34, 34);
+}
+
+.animeNum {
+    /* color: rgb(34, 34, 34); */
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+.animeImg {
+    border-radius: 10px;
+    width: auto; height: auto;
+    max-width: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 4%;
+    /* max-height: 100px; */
+}
+
+.animeTitle {
+    /* color: rgb(34, 34, 34); */
+    font-size: 25px;
+    width: 250px;
+    margin-right: 5%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.animeCate {
+    /* color: rgb(34, 34, 34); */
+    font-size: 20px;
+    margin-right: 5%;
+}
+
+.animeDate {
+    /* color: rgb(34, 34, 34); */
+    font-size: 20px;
+}
+
+
+.info_ {
+    /* position: relative; */
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+._mainImg {
+    /* width: auto; height: auto; */
+    max-width: 500px;
+    max-height: 450px;
+    margin-right: 20px;
+}
+.infoTtl {
+    font-size: 40px;
+    font-weight: bold;
+}
+.infoI {
+    font-size: 20px;
+    font-weight: border;
+    margin-bottom: 20px;
+}
+
+.inform_ {
+    margin-top: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+._one {
+    text-align: center;
+    margin: 20px;
+    margin-right: 150px;
+}
+
+._two {
+    text-align: center;
+    margin: 20px;
+    margin-right: 150px;
+}
+
+._thr {
+    text-align: center;
+    margin: 20px;
+    margin-right: 150px;
+}
+._four {
+    text-align: center;
+    margin: 20px;
+    /* margin-right: 150px; */
+}
+
+.crawlling_ {
+    /* width: auto; height: auto; */
+    max-width: 270px;
+    max-height: 270px;
+    margin-bottom: 10px;
+}
+
+.rankAnimes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+.svgs {
+    width: 400px;
+    height: 400px;
+    margin-right: 100px;
+}
+.infsTtl {
+    font-size: 50px;
+    font-weight: bolder;
+}
+.infs {
+    font-size: 25px;
+}
+.github {
+    margin-right: 10px;
+    color: white;
+}
+.portfolio {
+    color: white;
+}
+
+.endLink {
+    display: flex;
+    justify-content: center;
+}
+.name {
+    font-size: 40px;
+}
+
+.end {
+    background: #5E81AC;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.endImg {
+    margin: 20px;
+    width: 100px;
+    height: 80px;
+}

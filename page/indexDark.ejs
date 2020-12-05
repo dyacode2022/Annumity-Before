@@ -11,22 +11,26 @@
         <!-- Material Design Bootstrap -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
         
-        <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/src/css/styleDark.css" />
 
     </head>
 
     <body>
 
         <nav id="navBar" class="navbar navbar-dark">
-            <a id="navBarTitle" class="navbar-brand" href="/">Annumity</a>
+            <a id="navBarTitle" class="navbar-brand" href="/dark">Annumity</a>
 
-            <div class="nav-item">
-                <a id="navBarRank" class="nav-link" href="/rank">RANK</a>
+            <div class="nav-item ">
+                <a id="navBarRank" class="nav-link" href="/rankDark">RANK</a>
             </div>
 
-            <div class="nav-item">
+            <div class="nav-item navItms">
+                <a id="navBarRank" class="nav-link" href="/">WHITE</a>
+            </div>
+
+            <!-- <div class="nav-item">
                 <a id="navBarRank" class="nav-link" href="/rank">DARK</a>
-            </div>
+            </div> -->
         </nav>
 
         <div class="info_">
@@ -35,7 +39,10 @@
             <div class="infoText">
                 <div class="infoTtl">ANNUMITY</div>
                 <div class="infoI">Annumity 는 애니의 인기 순위와 최신 애니 등을<br>쉽고 간편하게 보여줍니다.<br>다른 웹사이트에서 크롤링하여 보여주는 방식을<br>사용합니다.<br><br>Annumity easily and conveniently shows<br>the popularity ranking of animation<br>and the latest anime.<br>It's crawling from other websites.</div>
-                
+                <div class="mainBtns">
+                    <button type="button" class="btn btn-cyan hoverable" onclick="location.href='/rankDark'">RANK</button>
+                    <!-- <button type="button" class="btn btn-cyan hoverable" onclick="location.href='/rank'">RANK</button> -->
+                </div>
             </div>
 
         </div>
@@ -61,6 +68,35 @@
             </div>
         </div>
 
+        <div class="rankAnimes">
+            <img class="svgs" src="/src/svg/undraw_Popular_re_mlfe.svg">
+            <div>
+                <div class="infsTtl">인기순위</div>
+                <div class="infs">애니의 인기순위를 보여줍니다.(RANK)</div>
+                
+            </div>
+        </div>
+
+        <div class="rankAnimes">
+            <div>
+                <div class="infsTtl">최신애니</div>
+                <div class="infs">애니를 최신순서대로 보여줍니다.(NEW)</div>
+                
+            </div>
+            <img class="svgs" src="/src/svg/undraw_Newsletter_re_wrob.svg">
+        </div>
+
+
+        <div class="end ">
+            <img class="endImg" src="/src/img/annumityLogoSmple.png">
+            <div>
+                <div class="name">DIA</div>
+                <div class="endLink">
+                    <a class="github" href="https://github.com/dia-7691">Github</a>
+                    <a class="portfolio" href="http://dev-dia.me">PortFolio</a>
+                </div>
+            </div>
+        </div>
 
     </body>
 
