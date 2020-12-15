@@ -177,6 +177,11 @@ body {
     margin-bottom: 20px;
 }
 
+.newBtn {
+    background: #238F88;
+    color: white;
+}
+
 .inform_ {
     margin-top: 290px;
     display: flex;
