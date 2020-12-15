@@ -30,6 +30,13 @@ body {
     top: 20%;
 }
 
+#navBarNew {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    top: 20%;
+}
 
 .anime {
     background: #ececec;
@@ -148,13 +155,17 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 200px;
+    margin-bottom: 200px;
+    /* position: relative;
+    top: 50%;
+    transform: translateY(50%); */
 }
 
 ._mainImg {
     /* width: auto; height: auto; */
     max-width: 500px;
     max-height: 450px;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 .infoTtl {
     font-size: 40px;
@@ -242,15 +253,66 @@ body {
 
 .end {
     background: #5E81AC;
-    text-align: center;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 200px; 
+}
+
+.solid {
+    background: rgb(182, 182, 182);
+    position: relative;
+    width: 80%;
+    height: 1px;
+    left: 50%; transform: translateX(-50%);
+    margin-top: 100px;
+
 }
 
 .endImg {
     margin: 20px;
     width: 100px;
     height: 80px;
+}
+
+
+.newA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.animeNew {
+    background: rgb(247, 247, 247);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.animeNImg {
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.animeNTitle {
+    /* display: inline-block; */
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+
+}
+
+.animeNDate {
+    width: 300px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

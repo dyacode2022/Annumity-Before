@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Annumity</title>
+
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+
+    </head>
+
+    <body>
+
+        <nav id="navBar" class="navbar navbar-dark">
+            <a id="navBarTitle" class="navbar-brand" href="/">Annumity</a>
+
+            <div class="nav-item">
+                <a id="navBarRank" class="nav-link" href="/rank">RANK</a>
+            </div>
+
+            <div class="nav-item">
+                <a id="navBarNew" class="nav-link" href="/new">NEW</a>
+            </div>
+
+        </nav>
+
+        <!-- <h1>Annumity Rank Page.</h1> -->
+
+
+        <div class="newA">
+
+            <!-- <div class="inform anime">
+                <div class="animeInfoNum">순위</div>
+                <div class="animeInfoImg">이미지</div>
+                <div class="animeInfoTitle">제목</div>
+                <div class="animeInfoCate">카테고리</div>
+                <div class="animeDate">방영일</div>
+            </div> -->
+
+            <% for (let i = 0; i < 55; i++) { %>
+                <div class="animeNew hoverable z-depth-2 ">
+                    <img class="animeNImg hoverable" src="<%= imageN[i] %>">
+                    <div class="animeNTitle"><%= titleN[i+8] %></div>
+                    <div class="animeNDate"><%= dateN[i] %></div>
+                </div>
+            <% } %>
+
+        </div>
+
+    </body>
+
+</html>

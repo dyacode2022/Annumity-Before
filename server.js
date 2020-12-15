@@ -6,10 +6,16 @@ const { renderFile: render } = require('ejs')
 const cheerio = require('cheerio-httpcli')
 const { get } = require('superagent')
 
+// Rank 
 const titleDt = []
 const imageDt = []
 const categoryDt = []
 const dateDt = []
+
+// New
+const titleN = []
+const imageN = []
+const dateN = []
 
 refresh()
 setInterval(refresh, 100000)
@@ -37,6 +43,23 @@ async function refresh () {
     
     })
 
+    cheerio.fetch('http://anime.onnada.com/search.php', {}, (err, $) => {
+        if (err) throw err
+    
+        $('.title').each((i, element) => {
+            titleN.push($(element).text()) // .title 요소들을 모두 찾아 titleN에 저장
+        })
+
+        $('.thumb>a>.img2').each((i, element) => {
+            imageN.push($(element).attr('data-original')) // .thumb>a>img2 요소들을 모두 찾아 imageN에 저장
+        })
+
+        $('.date').each((i, element) => {
+            dateN.push($(element).text()) // .date 요소들을 모두 찾아 dateN에 저장
+        })
+    
+    })
+
 }
 
 app.use('/src', express.static(path + '/src'))
@@ -45,25 +68,6 @@ app.get('/', async (_, res) => {
 
     const str = await render(path + '/page/index.ejs')
 
-    // console.log(imageDt[0])
-    res.send(str)
-
-})
-
-app.get('/dark', async (_, res) => {
-
-    const str = await render(path + '/page/indexDark.ejs')
-
-    // console.log(imageDt[0])
-    res.send(str)
-
-})
-
-app.get('/rankDark', async (_, res) => {
-
-    const str = await render(path + '/page/rankDark.ejs', { titleDt, imageDt, categoryDt, dateDt })
-
-    // console.log(imageDt[0])
     res.send(str)
 
 })
@@ -71,6 +75,15 @@ app.get('/rankDark', async (_, res) => {
 app.get('/rank', async (_, res) => {
 
     const str = await render(path + '/page/rank.ejs', { titleDt, imageDt, categoryDt, dateDt })
+
+    // console.log(titleDt[0])
+    res.send(str)
+
+})
+
+app.get('/new', async (_, res) => {
+
+    const str = await render(path + '/page/new.ejs', { titleN, imageN, dateN })
 
     // console.log(titleDt[0])
     res.send(str)
@@ -91,6 +104,18 @@ app.get('/getDataCate', (req, res) => {
 
 app.get('/getDataDate', (req, res) => {
     res.json(dateDt)
+})
+
+app.get('/getDataNew', (req, res) => {
+    res.json(titleN)
+})
+
+app.get('/getDataNewImg', (req, res) => {
+    res.json(imageN)
+})
+
+app.get('/getDataNewDate', (req, res) => {
+    res.json(dateN)
 })
 
 app.listen(PORT, () => console.log('Server is now on http://localhost:' + PORT))
