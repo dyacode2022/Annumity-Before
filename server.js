@@ -1,4 +1,4 @@
-const PORT = 80
+const PORT = port = process.env.PORT || 80
 const path = require('path').resolve()
 const express = require('express')
 const app = express()
