@@ -1,4 +1,4 @@
-const PORT = 7691
+const PORT = 80
 const path = require('path').resolve()
 const express = require('express')
 const app = express()

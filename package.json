@@ -1,0 +1,31 @@
+{
+  "name": "annumity",
+  "version": "1.0.0",
+  "description": "**Annumity - 애니 커뮤니티**\r  - Nodejs 로 개발",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cheerio-httpcli": "^0.8.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "superagent": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dia-7691/Annumity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dia-7691/Annumity/issues"
+  },
+  "homepage": "https://github.com/dia-7691/Annumity#readme"
+}
