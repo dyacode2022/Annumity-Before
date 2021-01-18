@@ -1,6 +1,7 @@
 body {
     color: rgb(109, 109, 109);
-    background: rgb(255, 255, 255);
+    background: rgb(243, 243, 243);
+    font-weight: bolder;
 
     margin: 0;
     padding: 0;
@@ -11,31 +12,34 @@ body {
     height: 50px;
     margin-bottom: 20px;
     display: flex;
-    background: #5E81AC;
+    background: rgb(233, 233, 233);
 }
 
 #navBarTitle {
     position: relative;
-    color: white;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
     font-size: 25px;
     padding-left: 20px;
-    top: 10%;
+    top: 15%;
 }
 
 #navBarRank {
     position: relative;
-    color: white;
+    color: rgb(85, 85, 85);
+    font-weight: bolder;
     font-size: 20px;
     padding-left: 20px;
-    top: 20%;
+    top: 25%;
 }
 
 #navBarNew {
     position: relative;
-    color: white;
+    color: rgb(85, 85, 85);
+    font-weight: bolder;
     font-size: 20px;
     padding-left: 20px;
-    top: 20%;
+    top: 25%;
 }
 
 .anime {
@@ -49,12 +53,21 @@ body {
 }
 
 .anime_one {
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+/*
+.anime_one {
     background: rgb(255, 253, 113);
     border-radius: 30px;
     display: flex;
-    /* align-content: center; */
+    align-content: center; 
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center; 
     margin: 40px;
 }
 
@@ -62,41 +75,42 @@ body {
     background: rgb(206, 206, 206);
     border-radius: 30px;
     display: flex;
-    /* align-content: center; */
+    align-content: center; 
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center; 
     margin: 40px;
 }
 .anime_thr {
     background: rgb(170, 145, 116);
     border-radius: 30px;
     display: flex;
-    /* align-content: center; */
+    align-content: center; 
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center; 
     margin: 40px;
 }
-
+*/
 .animeNum {
     color: rgb(34, 34, 34);
     font-size: 30px;
-    margin-left: 5%;
+
+    font-weight: bold;
 }
 
 .animeInfoNum {
     color: rgb(34, 34, 34);
     font-size: 20px;
-    margin-left: 20%;
+    font-weight: bolder;
 }
 
 .animeImg {
     border-radius: 10px;
     width: auto; height: auto;
-    max-width: 120px;
+    max-width: 200px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 10%;
-    margin-right: 4%;
+    margin-left: 20px;
+    margin-right: 20px;
     /* max-height: 100px; */
 }
 
@@ -117,10 +131,10 @@ body {
     color: rgb(34, 34, 34);
     font-size: 25px;
     width: 250px;
-    margin-right: 5%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: bolder;
     
 }
 
@@ -128,23 +142,26 @@ body {
     color: rgb(34, 34, 34);
     font-size: 20px;
     margin-right: 20%;
+    font-weight: bolder;
 }
 
 .animeCate {
     color: rgb(34, 34, 34);
     font-size: 20px;
-    margin-right: 5%;
+    font-weight: bolder;
 }
 
 .animeInfoCate {
     color: rgb(34, 34, 34);
     font-size: 20px;
+    font-weight: bolder;
     margin-right: 10%;
 }
 
 .animeDate {
     color: rgb(34, 34, 34);
     font-size: 20px;
+    font-weight: bolder;
 }
 
 
@@ -156,6 +173,7 @@ body {
     align-items: center;
     margin-top: 200px;
     margin-bottom: 200px;
+    font-weight: bolder;
     /* position: relative;
     top: 50%;
     transform: translateY(50%); */
@@ -180,6 +198,7 @@ body {
 .newBtn {
     background: #238F88;
     color: white;
+    font-weight: bolder;
 }
 
 .inform_ {
@@ -189,28 +208,33 @@ body {
     align-items: center;
     font-size: 18px;
     margin-bottom: 100px;
+    font-weight: bolder;
 }
 
 ._one {
     text-align: center;
     margin: 20px;
     margin-right: 150px;
+    font-weight: bolder;
 }
 
 ._two {
     text-align: center;
     margin: 20px;
     margin-right: 150px;
+    font-weight: bolder;
 }
 
 ._thr {
     text-align: center;
     margin: 20px;
     margin-right: 150px;
+    font-weight: bolder;
 }
 ._four {
     text-align: center;
     margin: 20px;
+    font-weight: bolder;
     /* margin-right: 150px; */
 }
 

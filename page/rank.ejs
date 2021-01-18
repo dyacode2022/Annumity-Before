@@ -6,12 +6,9 @@
 
         <title>Annumity</title>
 
-        <!-- 합쳐지고 최소화된 최신 CSS -->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
-        <!-- Material Design Bootstrap -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
         
-        <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/src/css/rankstyle.css" />
 
     </head>
 
@@ -29,50 +26,122 @@
             </div>
         </nav>
 
-        <!-- <h1>Annumity Rank Page.</h1> -->
-
 
         <div class="ranks">
 
-            <!-- <div class="inform anime">
-                <div class="animeInfoNum">순위</div>
-                <div class="animeInfoImg">이미지</div>
-                <div class="animeInfoTitle">제목</div>
-                <div class="animeInfoCate">카테고리</div>
-                <div class="animeDate">방영일</div>
-            </div> -->
+            <div class="onethr">
 
-            <div class="anime_one hoverable ">
-                <div class="animeNum" style="font-size: 40px;"><%= "1위" %></div>
-                <img class="animeImg hoverable" src="<%= imageDt[0] %>">
-                <div class="animeTitle"><%= titleDt[1] %></div>
-                <div class="animeCate"><%= categoryDt[1] %></div>
-                <div class="animeDate"><%= dateDt[1] %></div>
-            </div>
-            <div class="anime_two hoverable ">
-                <div class="animeNum" style="font-size: 40px;"><%= "2위" %></div>
-                <img class="animeImg hoverable" src="<%= imageDt[1] %>">
-                <div class="animeTitle"><%= titleDt[2] %></div>
-                <div class="animeCate"><%= categoryDt[2] %></div>
-                <div class="animeDate"><%= dateDt[2] %></div>
-            </div>
-            <div class="anime_thr hoverable ">
-                <div class="animeNum" style="font-size: 40px;"><%= "3위" %></div>
-                <img class="animeImg hoverable" src="<%= imageDt[2] %>">
-                <div class="animeTitle"><%= titleDt[3] %></div>
-                <div class="animeCate"><%= categoryDt[3] %></div>
-                <div class="animeDate"><%= dateDt[3] %></div>
-            </div>
+                <div class="anime_one">
 
-            <% for (let i = 3; i < 10; i++) { %>
-                <div class="anime hoverable ">
-                    <div class="animeNum"><%= i+1 + "위" %></div>
-                    <img class="animeImg hoverable" src="<%= imageDt[i] %>">
-                    <div class="animeTitle"><%= titleDt[i+1] %></div>
-                    <div class="animeCate"><%= categoryDt[i+1] %></div>
-                    <div class="animeDate"><%= dateDt[i+1] %></div>
+                    <div class="cover">
+                        <div class="rankCover z-depth-1">
+                            <div class="rankNumCover">1위</div>
+
+                            <div class="imgCover"><img src="<%= imageDt[0] %>"></div>
+
+                            <div class="textCover">
+                                <div class="animeCate"><%= categoryDt[1] %></div>
+                                <div class="animeTitle"><%= titleDt[1] %></div>
+                                <div class="animeDate"><%= dateDt[1] %></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            <% } %>
+
+                <div class="anime_one">
+
+                    <div class="cover">
+                        <div class="rankCover z-depth-1">
+                            <div class="rankNumCover">2위</div>
+
+                            <div class="imgCover"><img src="<%= imageDt[1] %>"></div>
+
+                            <div class="textCover">
+                                <div class="animeCate"><%= categoryDt[2] %></div>
+                                <div class="animeTitle"><%= titleDt[2] %></div>
+                                <div class="animeDate"><%= dateDt[2] %></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anime_one">
+
+                    <div class="cover">
+                        <div class="rankCover z-depth-1">
+                            <div class="rankNumCover">3위</div>
+
+                                <div class="imgCover"><img src="<%= imageDt[2] %>"></div>
+
+                                <div class="textCover">
+                                    <div class="animeCate"><%= categoryDt[3] %></div>
+                                    <div class="animeTitle"><%= titleDt[3] %></div>
+                                    <div class="animeDate"><%= dateDt[3] %></div>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- <div class="anime_one hoverable z-depth-1 ">
+                    <div class="imageplace">
+                        <img class="animeImg hoverable" src="<%= imageDt[0] %>">
+                    </div>
+                    <div class="textplace">
+                        <div class="animeNum" style="color: rgb(255,255,110);">1위</div>
+                        <div class="animeCate"><%= categoryDt[1] %></div>
+                        <div class="animeTitle"><%= titleDt[1] %></div>
+                        <div class="animeDate"><%= dateDt[1] %></div>
+                    </div>
+                </div>
+
+                <div class="anime_two hoverable z-depth-1 ">
+                    <div class="imageplace">
+                        <img class="animeImg hoverable" src="<%= imageDt[1] %>">
+                    </div>
+                    <div class="textplace">
+                        <div class="animeNum" style="color: rgb(183,183,183);">2위</div>
+                        <div class="animeCate"><%= categoryDt[2] %></div>
+                        <div class="animeTitle"><%= titleDt[2] %></div>
+                        <div class="animeDate"><%= dateDt[2] %></div>
+                    </div>
+                </div>
+
+                <div class="anime_thr hoverable z-depth-1 ">
+                    <div class="imageplace">
+                        <img class="animeImg hoverable" src="<%= imageDt[2] %>">
+                    </div>
+                    <div class="textplace">
+                        <div class="animeNum" style="color: rgb(105,81,81);">3위</div>
+                        <div class="animeCate"><%= categoryDt[3] %></div>
+                        <div class="animeTitle"><%= titleDt[3] %></div>
+                        <div class="animeDate"><%= dateDt[3] %></div>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="fourend">
+                <% for (let i = 3; i < 10; i++) { %>
+                    <div class="cover-for">
+                        <div class="rankCover-for z-depth-1">
+                            <div class="rankNumCover-for"><%= i+1 + "위" %></div>
+
+                            <div class="imgCover-for"><img src="<%= imageDt[i] %>"></div>
+
+                            <div class="textCover-for">
+                                <div class="animeCate-for"><%= categoryDt[i+1] %></div>
+                                <div class="animeTitle-for"><%= titleDt[i+1] %></div>
+                                <div class="animeDate-for"><%= dateDt[i+1] %></div>
+                            </div>
+
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+
 
         </div>
 
