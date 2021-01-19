@@ -18,7 +18,7 @@ const imageN = []
 const dateN = []
 
 refresh()
-setInterval(refresh, 100000)
+setInterval(refresh, 1000)
 
 async function refresh () {
 
